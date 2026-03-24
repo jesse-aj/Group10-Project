@@ -104,7 +104,8 @@ const books = [
 
 
 
-
+// Picks the first 4 books from the array to show as featured on the home page
+const featuredBooks = books.slice(0, 4);
 
 
 

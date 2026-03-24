@@ -235,7 +235,70 @@ section {
   padding: 4rem 0;
 }
 
+/* === BOOKS PAGE === */
+.books-page h1 {
+  margin-bottom: 0.4rem;
+}
 
+.books-page > .container > p {
+  margin-bottom: 2rem;
+}
+
+/* === SEARCH AND FILTER CONTROLS === */
+.books-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* === SEARCH INPUT === */
+.search-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--light-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text);
+  /* removes the default blue outline on focus */
+  outline: none;
+}
+
+.search-input:focus {
+  /* replaces default outline with our accent colour */
+  border-color: var(--accent);
+}
+
+/* === FILTER BUTTONS === */
+.filter-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap; /* wraps to next line on small screens */
+}
+
+.filter-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--light-border);
+  border-radius: 20px; /* pill shape */
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* active class is added by JS when a filter button is clicked */
+.filter-btn.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
 
 /* Book Cards */
 .book-grid {
