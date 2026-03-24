@@ -42,6 +42,31 @@
 
         </div>
     </nav>
+
+
+<!-- CART SIDEBAR - hidden by default, slides in when cart icon is clicked -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-sidebar" id="cart-sidebar">
+
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+<!-- Close button -->
+    <button class="cart-close" id="cart-close">✕</button>
+  </div>
+
+  <!-- Cart items will be injected here by cart.js -->
+  <div class="cart-items" id="cart-items"></div>
+
+  <!-- Cart footer with total and checkout button -->
+  <div class="cart-footer">
+    <p class="cart-total">Total: <span id="cart-total">GHS 0</span></p>
+    <button class="btn btn-primary" onclick="checkout()">
+      Order via WhatsApp
+    </button>
+  </div>
+
+</div>
     
 
     <!-- HERO SECTION - the first thing users see when they land on the page -->

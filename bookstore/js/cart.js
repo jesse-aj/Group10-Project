@@ -89,7 +89,7 @@ function checkout() {
   message += `%0A%0APlease confirm availability. Thank you!`;
 
   // All cart orders go to YOUR number
-  const yourNumber = "23357610844";
+  const yourNumber = "233576170844";
 
   // Open WhatsApp with the full order message
   window.open(`https://wa.me/${yourNumber}?text=${message}`, "_blank");
@@ -114,3 +114,84 @@ document.addEventListener("click", function (e) {
 
 // Run on page load to show correct count if cart already has items
 updateCartCount();
+
+
+
+// RENDER CART SIDEBAR ITEMS 
+function renderCart() {
+  const cartItems = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
+
+  // Clear current items
+  cartItems.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartItems.innerHTML = "<p>Your cart is empty.</p>";
+    cartTotal.textContent = "GHS 0";
+    return;
+  }
+
+  let total = 0;
+
+  cart.forEach(function (book) {
+    total += book.price;
+
+    const item = document.createElement("div");
+    item.classList.add("cart-item");
+
+    item.innerHTML = `
+      <div class="cart-item-info">
+        <h4>${book.title}</h4>
+        <p>GHS ${book.price}</p>
+      </div>
+      <!-- data-id tells removeFromCart which book to remove -->
+      <button class="cart-item-remove" data-id="${book.id}">✕</button>
+    `;
+
+    cartItems.appendChild(item);
+  });
+
+  cartTotal.textContent = `GHS ${total}`;
+}
+
+
+
+// OPEN AND CLOSE CART SIDEBAR 
+function openCart() {
+  document.getElementById("cart-sidebar").classList.add("open");
+  document.getElementById("cart-overlay").classList.add("open");
+  renderCart();
+}
+
+
+
+function closeCart() {
+  document.getElementById("cart-sidebar").classList.remove("open");
+  document.getElementById("cart-overlay").classList.remove("open");
+}
+
+
+// EVENT LISTENERS FOR CART OPEN/CLOSE 
+document.getElementById("cart-overlay").addEventListener("click", closeCart);
+document.getElementById("cart-close").addEventListener("click", closeCart);
+
+
+
+// Make cart icon open the sidebar instead of going to #cart
+document.querySelector(".cart-icon").addEventListener("click", function (e) {
+  e.preventDefault(); // stops the #cart link from doing anything
+  openCart();
+});
+
+
+
+// Listen for remove button clicks inside the cart
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("cart-item-remove")) {
+    const bookId = parseInt(e.target.dataset.id);
+    removeFromCart(bookId);
+
+    renderCart(); // re-render after removing
+    updateCartCount();
+  }
+});

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | PageTurner </title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+     <nav>
+        <div class="container">
+
+    <!-- Logo / Site name -->
+    <a href="index.html" class="nav-logo">PageTurner Books</a>
+
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+
+    <!-- Right side: dark mode toggle + cart -->
+    <div class="nav-right">
+
+      <!-- Dark mode button -->
+      <button class="btn-icon" id="darkmode-toggle">🌙</button>
+
+      <!-- Cart icon with item count badge -->
+      <a href="#cart" class="cart-icon">
+        🛒
+        <!-- This span will show how many items are in the cart -->
+        <!-- cart.js will update this number automatically -->
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+        </div>
+    </nav>
+
+        <!-- CART SIDEBAR - hidden by default, slides in when cart icon is clicked -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<div class="cart-sidebar" id="cart-sidebar">
+
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <!-- Close button -->
+    <button class="cart-close" id="cart-close">✕</button>
+  </div>
+
+  <!-- Cart items will be injected here by cart.js -->
+  <div class="cart-items" id="cart-items"></div>
+
+  <!-- Cart footer with total and checkout button -->
+  <div class="cart-footer">
+    <p class="cart-total">Total: <span id="cart-total">GHS 0</span></p>
+    <button class="btn btn-primary" onclick="checkout()">
+      Order via WhatsApp
+    </button>
+  </div>
+</div>
+
+
+<!-- ABOUT PAGE -->
+<main>
+  <section class="about-page">
+    <div class="container">
+
+      <!-- Page heading -->
+      <h1>About Us</h1>
+      <p class="about-intro">We are a small but passionate bookstore based in Ghana, bringing good books closer to readers everywhere.</p>
+
+      <!-- Store story -->
+      <div class="about-block">
+        <h2>Our Story</h2>
+        <p>What started as a small collection of self-help and Christian books has grown into a diverse catalog covering fiction, academic textbooks, and more. We believe every book has the power to change a life — and we want to make sure the right book reaches the right person.</p>
+      </div>
+
+      <!-- What we offer -->
+      <div class="about-block">
+        <h2>What We Offer</h2>
+        <p>We stock a carefully selected range of books across multiple categories. Whether you are looking for personal development, spiritual growth, a great novel, or a course textbook — we have something for you.</p>
+        <p>All orders are handled personally via WhatsApp so you can ask questions, confirm availability, and arrange pickup or delivery conveniently.</p>
+      </div>
+
+      <!-- Location and contact info -->
+      <div class="about-block">
+        <h2>Find Us</h2>
+        <p>Based in Ghana. Contact us via WhatsApp or visit our contact page to send us a message.</p>
+        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+ 
+<script src="js/darkmode.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
+
+
+
