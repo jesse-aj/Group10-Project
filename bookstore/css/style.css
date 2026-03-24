@@ -90,6 +90,58 @@ nav {
 }
 
 
+/* NAV RIGHT (dark mode + cart icons)  */
+.nav-right {
+  /* sits the icons side by side with some space between */
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/*  DARK MODE BUTTON */
+.btn-icon {
+  /* removes all default button styling */
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* makes it sit nicely with other nav items */
+  display: flex;
+  align-items: center;
+}
+
+/* CART ICON WRAPPER */
+.cart-icon {
+  /* position relative so the badge can be placed on top of the icon */
+  position: relative;
+  font-size: 1.3rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+}
+
+/* CART COUNT BADGE */
+.cart-count {
+  /* pulls the badge and places it top right of the cart icon */
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  /* makes it a small green circle */
+  background-color: var(--accent);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%; /* 50% makes any square a circle */
+  
+  /* centers the number inside the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* Buttons */
 .btn {
