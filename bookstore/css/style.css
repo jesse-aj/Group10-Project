@@ -300,6 +300,20 @@ section {
   border-color: var(--accent);
 }
 
+/* CARD ACTIONS (buttons at bottom of each card) */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card-actions .btn {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.6rem;
+}
+
 /* Book Cards */
 .book-grid {
   display: grid;
