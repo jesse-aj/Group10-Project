@@ -88,12 +88,16 @@ nav {
   background-color: var(--card-bg);
   border-bottom: 1px solid var(--light-border);
   padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+/* this targets the div.container INSIDE the nav specifically */
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo {
@@ -171,6 +175,20 @@ nav {
   justify-content: center;
 }
 
+/* === FEATURED SECTION === */
+.featured h2 {
+  margin-bottom: 0.4rem;
+}
+
+.featured > .container > p {
+  margin-bottom: 2rem;
+}
+
+/* centers the see all button */
+.see-all {
+  margin-top: 2.5rem;
+  text-align: center;
+}
 
 /* Buttons */
 .btn {
