@@ -25,6 +25,35 @@ body {
   line-height: 1.6;
 }
 
+/* === HERO SECTION === */
+.hero {
+  /* generous padding so it feels spacious */
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  /* places both buttons side by side */
+  display: flex;
+  gap: 1rem;
+}
+
+/* makes the "Great Read" part green */
+.accent-text {
+  color: var(--accent);
+}
+
 /* Typography and Font for Headings   */
 h1, h2, h3 {
   font-family: Georgia, serif;
