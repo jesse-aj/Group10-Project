@@ -1,0 +1,224 @@
+/* Base Style CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Root CSS variable created to re use in design (name variables and store colours in them)*/
+:root {
+
+--bg: #f7f5f1;        /* main page background, warm white not cold white */
+--text: #1a1a1a;      /* main text colour, almost black but softer */
+--muted: #6b7280;     /* secondary text, like author names and small info */
+--accent: #2d6a4f;    /* your main green colour, used for buttons and links */
+--accent-hover: #1b4332; /* darker green for when you hover over buttons */
+--light-border: #e0ddd8; /* subtle border colour for cards and lines */
+--card-bg: #ffffff;   /* background of each book card, pure white */
+}
+
+body {
+  background-color: var(--bg);  /*using css variables stored */
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Typography and Font for Headings   */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+ 
+/* Paragraphs */
+p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+ 
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+
+
+/* navigation bar  */
+nav {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--light-border);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+
+
+/* Book Cards */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--light-border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.book-card-body {
+  padding: 1rem;
+}
+
+.book-card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.book-card-body .author {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.book-card-body .price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+
+
+
+/* Footer Section*/
+footer {
+  border-top: 1px solid var(--light-border);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Dark Mode Effect   */
+body.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --card-bg: #1f2937;
+  --light-border: #374151;
+}
+
+
+
+/* Responsivenes on other Devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  h1 { font-size: 1.7rem; }
+}

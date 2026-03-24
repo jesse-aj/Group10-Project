@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+
+         <!-- Logo / Site name -->
+    <a href="index.html" class="nav-logo">PageTurner Books</a>
+
+
+     <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+
+    <!-- Right side: dark mode toggle + cart -->
+    <div class="nav-right">
+
+      <!-- Dark mode button -->
+      <button class="btn-icon" id="darkmode-toggle">🌙</button>
+
+      <!-- Cart icon with item count badge -->
+      <a href="#cart" class="cart-icon">
+        🛒
+        <!-- This span will show how many items are in the cart -->
+        <!-- cart.js will update this number automatically -->
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+
+
+
+        </div>
+    </nav>
+    
+
+
+<script src="js/darkmode.js"></script>
+<script src="js/cart.js"></script>    
+</body>
+</html>
