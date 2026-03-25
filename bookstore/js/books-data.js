@@ -37,7 +37,7 @@ const books = [
     price: 80,
     category: "christian",
     image: "images/purpose-driven.jpg",
-    whatsapp: "233XXXXXXXXX"
+    whatsapp: "233"
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const books = [
     price: 65,
     category: "fiction",
     image: "images/things-fall-apart.jpg",
-    whatsapp: "233YYYYYYYYYY"
+    whatsapp: "233576170844"
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const books = [
     price: 75,
     category: "fiction",
     image: "images/half-yellow-sun.jpg",
-    whatsapp: "233YYYYYYYYYY"
+    whatsapp: "233576170844"
   },
 
   // Academic Books
@@ -77,7 +77,7 @@ const books = [
     price: 120,
     category: "academic",
     image: "images/discrete-maths.jpg",
-    whatsapp: "233YYYYYYYYYY"
+    whatsapp: "233576170844"
   },
   {
     id: 9,
@@ -86,7 +86,7 @@ const books = [
     price: 150,
     category: "academic",
     image: "images/algorithms.jpg",
-    whatsapp: "233YYYYYYYYYY"
+    whatsapp: "233576170844"
   },
   {
     id: 10,
@@ -95,8 +95,605 @@ const books = [
     price: 130,
     category: "academic",
     image: "images/networking.jpg",
-    whatsapp: "233YYYYYYYYYY"
+    whatsapp: "233576170844"
+  },
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
   }
+
+  ,
+
+  {
+    id: 12,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 13,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 14,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 15,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 16,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 17,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 18,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 19,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 20,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 21,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 22,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 23,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 24,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 25,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 26,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 27,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 28,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 29,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 30,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 31,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 32,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 33,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 34,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 35,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 36,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 37,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 38,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id:"" ,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+  ,
+
+  {
+    id: 11,
+    title:"",
+    author:"",
+    price: "",
+    category: "",
+    image:"",
+    whatsapp: "",
+  
+
+  }
+
+
+
 
 
   
