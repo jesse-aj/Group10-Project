@@ -7,7 +7,7 @@ const books = [
     author: "James Clear",
     price: 85,
     category: "self-help",
-    image: "images/atomic-habits.jpg",
+    image: "images/Atomic_Habits.png",
     whatsapp: "233XXXXXXXXX"
   },
   {
@@ -16,8 +16,8 @@ const books = [
     author: "Stephen Covey",
     price: 90,
     category: "self-help",
-    image: "images/7-habits.jpg",
-    whatsapp: "233XXXXXXXXX"
+    image: "images/7_Habits.png",
+    whatsapp: "2333322112"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const books = [
     author: "Napoleon Hill",
     price: 75,
     category: "self-help",
-    image: "images/think-grow-rich.jpg",
+    image: "images/Think_Grow.png",
     whatsapp: "233XXXXXXXXX"
   },
 
@@ -36,7 +36,7 @@ const books = [
     author: "Rick Warren",
     price: 80,
     category: "christian",
-    image: "images/purpose-driven.jpg",
+    image: "images/Purpose_Driven.png",
     whatsapp: "233"
   },
   {
@@ -97,18 +97,6 @@ const books = [
     image: "images/networking.jpg",
     whatsapp: "233576170844"
   },
-
-  {
-    id: 11,
-    title:"",
-    author:"",
-    price: "",
-    category: "",
-    image:"",
-    whatsapp: "",
-  }
-
-  ,
 
   {
     id: 12,
