@@ -637,31 +637,44 @@ body.dark .toggle-thumb {
 }
 
 /* Responsivenes on other Devices */
+/* BASE - applies on all screens */
+.logo-short { display: none; }
+
+/* MOBILE - only applies under 768px */
 @media (max-width: 768px) {
-  /* fix navbar for mobile */
+  .logo-full { display: none; }
+  .logo-short { display: inline; }
+
   nav {
     padding: 0.8rem 1rem;
+    overflow: hidden;
   }
 
   nav .container {
-    flex-wrap: nowrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   .nav-logo {
-    font-size: 1rem;
+    font-size: 0.9rem;
     white-space: nowrap;
   }
 
   .nav-links {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .nav-links a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
-  /* fix hero text size */
+  .btn-icon {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
   h1 { font-size: 1.5rem; }
   h2 { font-size: 1.3rem; }
 
@@ -678,12 +691,10 @@ body.dark .toggle-thumb {
     text-align: center;
   }
 
-  /* fix book grid on mobile */
   .book-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* fix cart sidebar width on mobile */
   .cart-sidebar {
     width: 100%;
   }
