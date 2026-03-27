@@ -583,57 +583,69 @@ body.dark {
   border-color: var(--accent);
 }
 
+/* === DARK MODE TOGGLE SWITCH === */
+.toggle-switch {
+  width: 42px;
+  height: 24px;
+  background-color: var(--light-border);
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
 
+/* the sliding circle inside the switch */
+.toggle-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease;
+}
+
+/* when dark mode is on, switch turns green and thumb slides right */
+body.dark .toggle-switch {
+  background-color: var(--accent);
+}
+
+body.dark .toggle-thumb {
+  transform: translateX(18px);
+}
 
 /* Responsivenes on other Devices */
 @media (max-width: 768px) {
-  /* fix navbar for mobile */
   nav {
     padding: 0.8rem 1rem;
+    overflow: hidden;
   }
 
   nav .container {
-    flex-wrap: nowrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   .nav-logo {
-    font-size: 1rem;
+    font-size: 0.9rem;
     white-space: nowrap;
   }
 
   .nav-links {
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .nav-links a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
-  /* fix hero text size */
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.3rem; }
-
-  .hero {
-    padding: 3rem 0;
+  .btn-icon {
+    font-size: 1rem;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-buttons .btn {
-    text-align: center;
-  }
-
-  /* fix book grid on mobile */
-  .book-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* fix cart sidebar width on mobile */
-  .cart-sidebar {
-    width: 100%;
+  /* fix left content cutoff */
+  .container {
+    padding: 0 1rem;
   }
 }
