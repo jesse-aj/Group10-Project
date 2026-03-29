@@ -89,7 +89,7 @@ function checkout() {
   message += `%0A%0APlease confirm availability. Thank you!`;
 
   // All cart orders go to YOUR number
-  const yourNumber = "233576170844";
+  const yourNumber = "233542009972";
 
   // Open WhatsApp with the full order message
   window.open(`https://wa.me/${yourNumber}?text=${message}`, "_blank");

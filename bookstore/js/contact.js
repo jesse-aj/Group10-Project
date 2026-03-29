@@ -22,7 +22,7 @@ function sendMessage() {
     `Message: ${message}`;
 
   // Your number - all contact form messages come to you
-  const yourNumber = "233576170844";
+  const yourNumber = "233542009972";
 
   // Open WhatsApp with the message
   window.open(`https://wa.me/${yourNumber}?text=${whatsappMessage}`, "_blank");
