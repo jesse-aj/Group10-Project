@@ -2,7 +2,7 @@
 
 A modern, responsive online bookstore built with vanilla HTML, CSS, and JavaScript. Browse and purchase self-help, Christian, leadership, finance, communication, and relationship books with ease.
 
-🌐 **Live Demo:** [https://bookstore-five-phi.vercel.app](https://group-10-bookstore.vercel.app/)
+🌐 **Live Demo:** https://group-10-bookstore.vercel.app/
 
 ## Features
 
